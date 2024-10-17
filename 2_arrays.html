@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Declaration
+        const emptyArray = []
+
+        // Type
+        console.log('Los arrays son de tipo', typeof emptyArray)
+
+        // Declaration II
+        const drinks = ['Kas', 'Agua', 'Fanta', 'Coca-cola', 'Sprite']
+
+        // Log
+        console.log(drinks)
+
+        // Access (getter)
+        console.log(`La primera bebida es ${drinks[0]}`)
+
+        // Access (setter)
+        drinks[2] = 'Monster'
+        console.log(`Ahora las bebidas son`, drinks)
+
+        // Add last element (imperative)
+        drinks[drinks.length] = 'Jagger'
+        console.log(`Ahora las bebidas son`, drinks)
+
+        // Add last element (declarative)
+        drinks.push('Jaggermonster')
+        console.log(`Ahora las bebidas son`, drinks)
+
+        // Adding first element (declarative)
+        drinks.unshift('Zumo')
+        console.log('Ahora las bebidas son', drinks)
+
+        // Remove last element
+        drinks.pop()
+        console.log('Ahora las bebidas son', drinks)
+
+        // Removing values (several)
+        drinks.splice()
+        console.log('Ahora las bebidas son', drinks)
+
+
+
+    </script>
+</body>
+
+</html>

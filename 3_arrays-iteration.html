@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const drinks = ['Kas', 'Agua', 'Fanta', 'Coca-cola', 'Sprite']
+
+
+        // foreach step 1 -> nominal function
+        function showDrink(eachDrink) {
+            console.log('ESTA BEBIDA ES ->', eachDrink)
+        }
+
+        drinks.forEach(showDrink)
+
+
+
+        // foreach step 2 -> anon function
+        drinks.forEach(function (eachDrink) {
+            console.log('ESTA BEBIDA ES ->', eachDrink)
+        })
+
+
+
+        // foreach step 3 -> arrow function
+        drinks.forEach((eachDrink) => {
+            console.log('ESTA BEBIDA ES ->', eachDrink)
+        })
+
+
+
+        // foreach step 4 -> arrow specs
+        drinks.forEach((eachDrink) => console.log('ESTA BEBIDA ES ->', eachDrink))
+
+
+
+    </script>
+</body>
+
+</html>
